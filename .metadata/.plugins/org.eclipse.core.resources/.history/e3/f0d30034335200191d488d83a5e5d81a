@@ -1,0 +1,366 @@
+
+package server;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for commitReply complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="commitReply">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}long"/>
+ *         &lt;element name="arg1" type="{http://www.w3.org/2001/XMLSchema}int" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="arg2" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="arg3" type="{http://www.w3.org/2001/XMLSchema}double" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="arg4" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="arg5" type="{http://www.w3.org/2001/XMLSchema}float" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="arg6" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="arg7" type="{http://www.w3.org/2001/XMLSchema}long" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="arg8" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="arg9" type="{http://www.w3.org/2001/XMLSchema}unsignedShort" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="arg10" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="arg11" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/>
+ *         &lt;element name="arg12" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "commitReply", propOrder = {
+    "arg0",
+    "arg1",
+    "arg2",
+    "arg3",
+    "arg4",
+    "arg5",
+    "arg6",
+    "arg7",
+    "arg8",
+    "arg9",
+    "arg10",
+    "arg11",
+    "arg12"
+})
+public class CommitReply {
+
+    protected long arg0;
+    @XmlElement(nillable = true)
+    protected List<Integer> arg1;
+    protected int arg2;
+    @XmlElement(nillable = true)
+    protected List<Double> arg3;
+    protected int arg4;
+    @XmlElement(nillable = true)
+    protected List<Float> arg5;
+    protected int arg6;
+    @XmlElement(nillable = true)
+    protected List<Long> arg7;
+    protected int arg8;
+    @XmlElement(nillable = true)
+    @XmlSchemaType(name = "unsignedShort")
+    protected List<Integer> arg9;
+    protected int arg10;
+    @XmlElementRef(name = "arg11", type = JAXBElement.class, required = false)
+    protected JAXBElement<byte[]> arg11;
+    protected int arg12;
+
+    /**
+     * Gets the value of the arg0 property.
+     * 
+     */
+    public long getArg0() {
+        return arg0;
+    }
+
+    /**
+     * Sets the value of the arg0 property.
+     * 
+     */
+    public void setArg0(long value) {
+        this.arg0 = value;
+    }
+
+    /**
+     * Gets the value of the arg1 property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the arg1 property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getArg1().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Integer }
+     * 
+     * 
+     */
+    public List<Integer> getArg1() {
+        if (arg1 == null) {
+            arg1 = new ArrayList<Integer>();
+        }
+        return this.arg1;
+    }
+
+    /**
+     * Gets the value of the arg2 property.
+     * 
+     */
+    public int getArg2() {
+        return arg2;
+    }
+
+    /**
+     * Sets the value of the arg2 property.
+     * 
+     */
+    public void setArg2(int value) {
+        this.arg2 = value;
+    }
+
+    /**
+     * Gets the value of the arg3 property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the arg3 property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getArg3().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Double }
+     * 
+     * 
+     */
+    public List<Double> getArg3() {
+        if (arg3 == null) {
+            arg3 = new ArrayList<Double>();
+        }
+        return this.arg3;
+    }
+
+    /**
+     * Gets the value of the arg4 property.
+     * 
+     */
+    public int getArg4() {
+        return arg4;
+    }
+
+    /**
+     * Sets the value of the arg4 property.
+     * 
+     */
+    public void setArg4(int value) {
+        this.arg4 = value;
+    }
+
+    /**
+     * Gets the value of the arg5 property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the arg5 property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getArg5().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Float }
+     * 
+     * 
+     */
+    public List<Float> getArg5() {
+        if (arg5 == null) {
+            arg5 = new ArrayList<Float>();
+        }
+        return this.arg5;
+    }
+
+    /**
+     * Gets the value of the arg6 property.
+     * 
+     */
+    public int getArg6() {
+        return arg6;
+    }
+
+    /**
+     * Sets the value of the arg6 property.
+     * 
+     */
+    public void setArg6(int value) {
+        this.arg6 = value;
+    }
+
+    /**
+     * Gets the value of the arg7 property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the arg7 property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getArg7().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Long }
+     * 
+     * 
+     */
+    public List<Long> getArg7() {
+        if (arg7 == null) {
+            arg7 = new ArrayList<Long>();
+        }
+        return this.arg7;
+    }
+
+    /**
+     * Gets the value of the arg8 property.
+     * 
+     */
+    public int getArg8() {
+        return arg8;
+    }
+
+    /**
+     * Sets the value of the arg8 property.
+     * 
+     */
+    public void setArg8(int value) {
+        this.arg8 = value;
+    }
+
+    /**
+     * Gets the value of the arg9 property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the arg9 property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getArg9().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Integer }
+     * 
+     * 
+     */
+    public List<Integer> getArg9() {
+        if (arg9 == null) {
+            arg9 = new ArrayList<Integer>();
+        }
+        return this.arg9;
+    }
+
+    /**
+     * Gets the value of the arg10 property.
+     * 
+     */
+    public int getArg10() {
+        return arg10;
+    }
+
+    /**
+     * Sets the value of the arg10 property.
+     * 
+     */
+    public void setArg10(int value) {
+        this.arg10 = value;
+    }
+
+    /**
+     * Gets the value of the arg11 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link byte[]}{@code >}
+     *     
+     */
+    public JAXBElement<byte[]> getArg11() {
+        return arg11;
+    }
+
+    /**
+     * Sets the value of the arg11 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link byte[]}{@code >}
+     *     
+     */
+    public void setArg11(JAXBElement<byte[]> value) {
+        this.arg11 = value;
+    }
+
+    /**
+     * Gets the value of the arg12 property.
+     * 
+     */
+    public int getArg12() {
+        return arg12;
+    }
+
+    /**
+     * Sets the value of the arg12 property.
+     * 
+     */
+    public void setArg12(int value) {
+        this.arg12 = value;
+    }
+
+}

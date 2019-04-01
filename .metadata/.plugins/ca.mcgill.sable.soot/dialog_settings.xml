@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="class2" key="soot_run_config_1"/>
+	<item value="1" key="config_count"/>
+	<item value="SGXBranchReplacer:LoggerMain" key="class2_mainClass"/>
+	<list key="class2">
+		<item value="--keep-line-number"/>
+		<item value="false"/>
+	</list>
+</section>

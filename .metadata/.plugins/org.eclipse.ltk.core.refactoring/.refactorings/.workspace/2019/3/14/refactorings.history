@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;java_tests/lib/commons-lang3-3.8.1.jar&apos;" deleteContents="false" description="Delete resource &apos;java_tests/lib/commons-lang3-3.8.1.jar&apos;" element1="/java_tests/lib/commons-lang3-3.8.1.jar" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1554036895361"/>
+</session>
